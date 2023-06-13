@@ -7,7 +7,6 @@ RUN rm /etc/nginx/conf.d/*
 # Copy config files
 # *.conf files in conf.d/ dir get included in main config
 COPY ./deploy/default.conf /etc/nginx/conf.d/
-
 COPY ./dist /usr/share/nginx/html
 COPY ./public /usr/share/nginx/html/public
 
