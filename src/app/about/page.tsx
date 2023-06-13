@@ -4,16 +4,16 @@ import { Main } from "~/app/page.styles";
 import { Menu } from "~/components/menu.component";
 import { Body } from "~/components/body.component";
 
-export default function Home() {
+export default function Page() {
   return (
     <Main>
       <Body>
         <p>
-          The HOME page.
+          This is the ABOUT page.
         </p>
       </Body>
 
-      <Menu/>
+      <Menu />
     </Main>
   )
 }
