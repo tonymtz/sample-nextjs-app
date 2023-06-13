@@ -14,13 +14,15 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
+      - run: ls -las
+      - run: pwd
 
       - uses: a7ul/tar-action@v1.1.0
         with:
           command: c
           cwd: "./"
           files: |
-            build/
+            ./build/
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
