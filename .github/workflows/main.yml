@@ -20,7 +20,7 @@ jobs:
           command: c
           cwd: "./"
           files: |
-            dist/
+            build/
           outPath: deploy.tar
 
       - name: Deploy App to CapRover
